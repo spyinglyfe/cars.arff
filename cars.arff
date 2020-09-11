@@ -1,0 +1,71 @@
+%	1. Title: Sports Cars Database
+%
+%	2. Sources:
+%			(a)Creator: Michael Marr
+%			(b)Date: 9/10/2020
+%
+%
+%	3. Past Usage:
+%
+%	4. Relevent Information:
+%		Cars:
+%			1. 2021 Dodge Charger R/T
+%			2. 2021 Toyota Supra 3.0
+%			3. 2021 Dodge Challenger R/T
+%			4. 2016 Hyundai Genesis 3.8L
+%			5. 2015 Mitsubishi Lancer Evolution
+%			6. 2020 Subaru WRX STI
+%			7. 2018 Ford Focus RS
+%			8. 2020 Subaru BRZ Limited
+%			9. 2020 Ford Mustang GT Fastback
+%			10. 2017 Dodge Viper GT
+%			11. 2021 Chevrolet Camaro SS
+%			12. 2020 Chevrolet Corvette 
+%			13. 2021 Lexus LC500
+%			14. 2018 Lotus Evora GT
+%			15. 2020 Nissan 370Z
+%
+%	5. Number of Instances:
+%
+%	6. Number of Attributes: 6
+%
+%	7. Attribute Information:
+%		1. Price
+%		2. Horsepower
+%		3. (0-60) Time
+%		4. MPG
+%		5. Drivetrain
+%		6. Class:
+%			-- Good
+%			-- Better
+%			-- Best
+%
+%	8. Missing Attribute Values: None
+%
+%	9. Class Distribution:
+
+@RELATION SportsCars
+
+@ATTRIBUTE price REAL
+@ATTRIBUTE horsepower REAL
+@ATTRIBUTE zerosixty REAL
+@ATTRIBUTE combinedmpg REAL
+@ATTRIBUTE drivetrain {'front','rear','all'}
+@ATTRIBUTE evaluation{Good,Better,Best}
+
+@DATA
+38500,370,4.9,19,rear,Good
+52000,382,3.8,25,rear,Better
+53000,485,4.2,18,rear,Better
+35000,348,4.9,19,rear,Good
+38000,303,4.4,19,all,Better
+42000,310,6.0,19,all,Good
+42000,350,4.9,22,all Better
+30000,205,6.1,24,rear,Good
+36000,460,4.2,19,rear,Better
+90000,645,3.3,14,rear,Best
+43000,455,4.0,19,rear,Better
+67000,490,2.8,19,rear,Best
+93000,471,4.8,19,rear,Better
+96000,400,3.8,19,rear,Best
+47000,350,5.0,20,rear,Good
